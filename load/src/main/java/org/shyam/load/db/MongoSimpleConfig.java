@@ -16,7 +16,7 @@ public class MongoSimpleConfig {
                                                        MongoMappingContext context) {
         MappingMongoConverter converter =
                 new MappingMongoConverter(new DefaultDbRefResolver(factory), context);
-        converter.setTypeMapper(new DefaultMongoTypeMapper(null)); // disables _class
+        converter.setTypeMapper(new DefaultMongoTypeMapper(null)); // disables _class field when adding data to mongodb database
         return converter;
     }
 }
