@@ -1,0 +1,15 @@
+org/shyam/transform/kafka/consumer/ConsumerManager.class
+org/shyam/transform/kafka/consumer/ReviewsConsumer.class
+org/shyam/transform/service/LanguageServiceFactory$1.class
+org/shyam/transform/service/GoogleNaturalLanguageService.class
+org/shyam/transform/kafka/producer/Producer.class
+org/shyam/transform/kafka/model/SentimentSerializer.class
+org/shyam/transform/kafka/producer/ConfigLoader.class
+org/shyam/transform/kafka/consumer/ConsumerTemplate.class
+org/shyam/transform/Main.class
+org/shyam/transform/kafka/producer/config/KafkaProducerConfig.class
+org/shyam/transform/service/LanguageServiceFactory.class
+org/shyam/transform/kafka/model/ProcessedMessage.class
+org/shyam/transform/service/LanguageServices.class
+org/shyam/transform/service/NaturalLanguageService.class
+org/shyam/transform/kafka/consumer/config/KafkaConsumerConfig.class

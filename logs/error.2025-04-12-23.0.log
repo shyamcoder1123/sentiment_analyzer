@@ -1,0 +1,1016 @@
+2025-04-12 23:01:36 [kafka-coordinator-heartbeat-thread | processed-data-group] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Node -1 disconnected.
+2025-04-12 23:01:36 [kafka-coordinator-heartbeat-thread | processed-data-group] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Node -1 disconnected.
+2025-04-12 23:01:36 [Worker-2] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Node -1 disconnected.
+2025-04-12 23:01:36 [Worker-4] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Node -1 disconnected.
+2025-04-12 23:01:36 [Worker-5] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Node -1 disconnected.
+2025-04-12 23:01:36 [Worker-3] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Node -1 disconnected.
+2025-04-12 23:01:44 [Thread-6] INFO  o.s.load.consumer.ConsumerManager - Shutting down consumers...
+2025-04-12 23:01:44 [Worker-2] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:01:44 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Member consumer-processed-data-group-2-89b83972-f4e5-497b-8b51-9dba70c6e939 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:01:44 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-2] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:01:44 [Worker-2] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:01:44 [Worker-2] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:01:44 [Worker-2] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:01:44 [Worker-2] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-2 unregistered
+2025-04-12 23:01:44 [Worker-2] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:01:44 [Worker-4] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:01:44 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Member consumer-processed-data-group-4-fa4fc735-05d8-4ef7-9110-ff3a75ac80cd sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:01:44 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-4] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:01:44 [Worker-4] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:01:44 [Worker-4] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:01:44 [Worker-4] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:01:44 [Worker-4] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-4 unregistered
+2025-04-12 23:01:44 [Worker-4] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:01:44 [Worker-3] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:01:44 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Member consumer-processed-data-group-3-0f36aeac-4bb3-4b9a-a4ce-276a9aad53aa sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:01:44 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-3] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:01:44 [Worker-3] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:01:44 [Worker-3] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:01:44 [Worker-3] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:01:44 [Worker-3] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-3 unregistered
+2025-04-12 23:01:44 [Worker-3] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:01:44 [Worker-5] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:01:44 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Member consumer-processed-data-group-5-626d7d7a-7d50-4369-aa29-76a44d696a22 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:01:44 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-5] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:01:44 [Worker-5] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:01:44 [Worker-5] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:01:44 [Worker-5] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:01:44 [Worker-5] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-5 unregistered
+2025-04-12 23:01:44 [Worker-5] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:01:44 [Worker-6] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:01:44 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Member consumer-processed-data-group-6-69ecca51-3c30-44ca-a61f-a991cc5f0595 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:01:44 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:01:44 [Worker-6] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:01:44 [Worker-6] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:01:44 [Worker-6] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:01:44 [Worker-6] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:01:44 [Worker-6] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-6 unregistered
+2025-04-12 23:01:44 [Worker-6] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:01:45 [Worker-1] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:01:45 [Worker-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Revoke previously assigned partitions processed-data-topic-0
+2025-04-12 23:01:45 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Member consumer-processed-data-group-1-b17d57fd-a921-4a9a-86ac-f3ea42ca5a29 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:01:45 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:01:45 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:01:45 [Worker-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:01:45 [Worker-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:01:45 [Worker-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:01:45 [Worker-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:01:45 [Worker-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-1 unregistered
+2025-04-12 23:01:45 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:01:45 [Thread-6] INFO  o.s.load.consumer.ConsumerManager - All consumers have been shut down.
+2025-04-12 23:01:48 [main] INFO  o.s.load.consumer.ConsumerManager - Starting 6 consumers for the 'contacts' topic...
+2025-04-12 23:01:48 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-processed-data-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = processed-data-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-12 23:01:48 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-04-12 23:01:48 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.0
+2025-04-12 23:01:48 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 771b9576b00ecf5b
+2025-04-12 23:01:48 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744479108994
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-processed-data-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = processed-data-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-04-12 23:01:49 [Worker-1] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Subscribed to topic(s): processed-data-topic
+2025-04-12 23:01:49 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Consuming messages from topic: processed-data-topic
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.0
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 771b9576b00ecf5b
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744479109024
+2025-04-12 23:01:49 [Worker-2] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Subscribed to topic(s): processed-data-topic
+2025-04-12 23:01:49 [Worker-2] INFO  o.s.load.consumer.ConsumerTemplate - Consuming messages from topic: processed-data-topic
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-processed-data-group-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = processed-data-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.0
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 771b9576b00ecf5b
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744479109049
+2025-04-12 23:01:49 [Worker-3] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Subscribed to topic(s): processed-data-topic
+2025-04-12 23:01:49 [Worker-3] INFO  o.s.load.consumer.ConsumerTemplate - Consuming messages from topic: processed-data-topic
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-processed-data-group-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = processed-data-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.0
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 771b9576b00ecf5b
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744479109069
+2025-04-12 23:01:49 [Worker-4] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Subscribed to topic(s): processed-data-topic
+2025-04-12 23:01:49 [Worker-4] INFO  o.s.load.consumer.ConsumerTemplate - Consuming messages from topic: processed-data-topic
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-processed-data-group-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = processed-data-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.0
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 771b9576b00ecf5b
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744479109086
+2025-04-12 23:01:49 [Worker-5] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Subscribed to topic(s): processed-data-topic
+2025-04-12 23:01:49 [Worker-5] INFO  o.s.load.consumer.ConsumerTemplate - Consuming messages from topic: processed-data-topic
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-processed-data-group-6
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = processed-data-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 100
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-04-12 23:01:49 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.8.0
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 771b9576b00ecf5b
+2025-04-12 23:01:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1744479109100
+2025-04-12 23:01:49 [main] INFO  o.s.load.consumer.ConsumerManager - Started 6 consumers for the 'processed-data-topic' topic.
+2025-04-12 23:01:49 [Worker-6] INFO  o.a.k.c.c.i.LegacyKafkaConsumer - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Subscribed to topic(s): processed-data-topic
+2025-04-12 23:01:49 [Worker-6] INFO  o.s.load.consumer.ConsumerTemplate - Consuming messages from topic: processed-data-topic
+2025-04-12 23:01:49 [Worker-3] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2025-04-12 23:01:49 [Worker-5] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2025-04-12 23:01:49 [Worker-4] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2025-04-12 23:01:49 [Worker-6] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2025-04-12 23:01:49 [Worker-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2025-04-12 23:01:49 [Worker-2] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Cluster ID: 5L6g3nShT-eMCtK--X86sw
+2025-04-12 23:01:49 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-04-12 23:01:49 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-04-12 23:01:49 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-04-12 23:01:49 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-04-12 23:01:49 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-04-12 23:01:49 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-04-12 23:01:49 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Request joining group due to: need to re-join with the given member-id: consumer-processed-data-group-3-dc175d43-e18f-46af-b6c5-1715f3e56d27
+2025-04-12 23:01:49 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Request joining group due to: need to re-join with the given member-id: consumer-processed-data-group-2-0252a9e0-960c-467a-afc3-bdd8b3fd6266
+2025-04-12 23:01:49 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Request joining group due to: need to re-join with the given member-id: consumer-processed-data-group-1-a1e047a4-3165-4614-852c-679608958701
+2025-04-12 23:01:49 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Request joining group due to: need to re-join with the given member-id: consumer-processed-data-group-5-6174cc87-f091-484d-ac47-f3a1b3094240
+2025-04-12 23:01:49 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Request joining group due to: need to re-join with the given member-id: consumer-processed-data-group-6-a838c2a1-30a0-40e8-9348-4c4eed3a1761
+2025-04-12 23:01:49 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Request joining group due to: need to re-join with the given member-id: consumer-processed-data-group-4-dfe3a83c-9370-4b83-bbfe-01385670f13a
+2025-04-12 23:01:49 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:49 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] (Re-)joining group
+2025-04-12 23:01:53 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-processed-data-group-1-a1e047a4-3165-4614-852c-679608958701', protocol='range'}
+2025-04-12 23:01:53 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-processed-data-group-2-0252a9e0-960c-467a-afc3-bdd8b3fd6266', protocol='range'}
+2025-04-12 23:01:53 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Finished assignment for group at generation 7: {consumer-processed-data-group-4-dfe3a83c-9370-4b83-bbfe-01385670f13a=Assignment(partitions=[]), consumer-processed-data-group-1-a1e047a4-3165-4614-852c-679608958701=Assignment(partitions=[processed-data-topic-0]), consumer-processed-data-group-2-0252a9e0-960c-467a-afc3-bdd8b3fd6266=Assignment(partitions=[]), consumer-processed-data-group-6-a838c2a1-30a0-40e8-9348-4c4eed3a1761=Assignment(partitions=[]), consumer-processed-data-group-3-dc175d43-e18f-46af-b6c5-1715f3e56d27=Assignment(partitions=[]), consumer-processed-data-group-5-6174cc87-f091-484d-ac47-f3a1b3094240=Assignment(partitions=[])}
+2025-04-12 23:01:53 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-processed-data-group-3-dc175d43-e18f-46af-b6c5-1715f3e56d27', protocol='range'}
+2025-04-12 23:01:53 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-processed-data-group-1-a1e047a4-3165-4614-852c-679608958701', protocol='range'}
+2025-04-12 23:01:53 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-processed-data-group-3-dc175d43-e18f-46af-b6c5-1715f3e56d27', protocol='range'}
+2025-04-12 23:01:53 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-processed-data-group-2-0252a9e0-960c-467a-afc3-bdd8b3fd6266', protocol='range'}
+2025-04-12 23:01:53 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Notifying assignor about the new Assignment(partitions=[])
+2025-04-12 23:01:53 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Notifying assignor about the new Assignment(partitions=[])
+2025-04-12 23:01:53 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Notifying assignor about the new Assignment(partitions=[processed-data-topic-0])
+2025-04-12 23:01:53 [Worker-2] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Adding newly assigned partitions: 
+2025-04-12 23:01:53 [Worker-3] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Adding newly assigned partitions: 
+2025-04-12 23:01:53 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-processed-data-group-4-dfe3a83c-9370-4b83-bbfe-01385670f13a', protocol='range'}
+2025-04-12 23:01:53 [Worker-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Adding newly assigned partitions: processed-data-topic-0
+2025-04-12 23:01:53 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-processed-data-group-4-dfe3a83c-9370-4b83-bbfe-01385670f13a', protocol='range'}
+2025-04-12 23:01:53 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Notifying assignor about the new Assignment(partitions=[])
+2025-04-12 23:01:53 [Worker-4] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Adding newly assigned partitions: 
+2025-04-12 23:01:53 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-processed-data-group-5-6174cc87-f091-484d-ac47-f3a1b3094240', protocol='range'}
+2025-04-12 23:01:53 [Worker-1] INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition processed-data-topic-0 to the committed offset FetchPosition{offset=97, offsetEpoch=Optional[2], currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=2}}
+2025-04-12 23:01:53 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-processed-data-group-5-6174cc87-f091-484d-ac47-f3a1b3094240', protocol='range'}
+2025-04-12 23:01:53 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Notifying assignor about the new Assignment(partitions=[])
+2025-04-12 23:01:53 [Worker-5] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Adding newly assigned partitions: 
+2025-04-12 23:01:53 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-processed-data-group-6-a838c2a1-30a0-40e8-9348-4c4eed3a1761', protocol='range'}
+2025-04-12 23:01:53 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-processed-data-group-6-a838c2a1-30a0-40e8-9348-4c4eed3a1761', protocol='range'}
+2025-04-12 23:01:53 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Notifying assignor about the new Assignment(partitions=[])
+2025-04-12 23:01:53 [Worker-6] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Adding newly assigned partitions: 
+2025-04-12 23:02:11 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_70, value: {"authId":"user_70","sentiment":{"score":-0.4,"magnitude":0.4}}, offset: 97
+2025-04-12 23:02:11 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_70
+2025-04-12 23:02:11 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.4, magnitude=0.4]
+2025-04-12 23:02:12 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_81, value: {"authId":"user_81","sentiment":{"score":-0.5,"magnitude":0.5}}, offset: 98
+2025-04-12 23:02:12 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_81
+2025-04-12 23:02:12 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.5, magnitude=0.5]
+2025-04-12 23:02:13 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_24, value: {"authId":"user_24","sentiment":{"score":-0.6,"magnitude":0.6}}, offset: 99
+2025-04-12 23:02:13 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_24
+2025-04-12 23:02:13 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.6, magnitude=0.6]
+2025-04-12 23:02:15 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_44, value: {"authId":"user_44","sentiment":{"score":-0.4,"magnitude":0.4}}, offset: 100
+2025-04-12 23:02:15 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_44
+2025-04-12 23:02:15 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.4, magnitude=0.4]
+2025-04-12 23:02:16 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_48, value: {"authId":"user_48","sentiment":{"score":-0.7,"magnitude":0.7}}, offset: 101
+2025-04-12 23:02:16 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_48
+2025-04-12 23:02:16 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.7, magnitude=0.7]
+2025-04-12 23:02:17 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_91, value: {"authId":"user_91","sentiment":{"score":0.2,"magnitude":0.2}}, offset: 102
+2025-04-12 23:02:17 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_91
+2025-04-12 23:02:17 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=0.2, magnitude=0.2]
+2025-04-12 23:02:18 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_1, value: {"authId":"user_1","sentiment":{"score":-0.7,"magnitude":0.7}}, offset: 103
+2025-04-12 23:02:18 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_1
+2025-04-12 23:02:18 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.7, magnitude=0.7]
+2025-04-12 23:02:19 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_78, value: {"authId":"user_78","sentiment":{"score":-0.4,"magnitude":0.4}}, offset: 104
+2025-04-12 23:02:19 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_78
+2025-04-12 23:02:19 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.4, magnitude=0.4]
+2025-04-12 23:02:20 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_19, value: {"authId":"user_19","sentiment":{"score":-0.2,"magnitude":0.2}}, offset: 105
+2025-04-12 23:02:20 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_19
+2025-04-12 23:02:20 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.2, magnitude=0.2]
+2025-04-12 23:02:21 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_29, value: {"authId":"user_29","sentiment":{"score":-0.7,"magnitude":0.7}}, offset: 106
+2025-04-12 23:02:21 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_29
+2025-04-12 23:02:21 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.7, magnitude=0.7]
+2025-04-12 23:02:22 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_97, value: {"authId":"user_97","sentiment":{"score":-0.7,"magnitude":0.7}}, offset: 107
+2025-04-12 23:02:22 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_97
+2025-04-12 23:02:22 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.7, magnitude=0.7]
+2025-04-12 23:02:23 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_42, value: {"authId":"user_42","sentiment":{"score":-0.7,"magnitude":0.7}}, offset: 108
+2025-04-12 23:02:23 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_42
+2025-04-12 23:02:23 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.7, magnitude=0.7]
+2025-04-12 23:02:24 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_34, value: {"authId":"user_34","sentiment":{"score":-0.5,"magnitude":0.5}}, offset: 109
+2025-04-12 23:02:24 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_34
+2025-04-12 23:02:24 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.5, magnitude=0.5]
+2025-04-12 23:02:25 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_92, value: {"authId":"user_92","sentiment":{"score":-0.5,"magnitude":0.5}}, offset: 110
+2025-04-12 23:02:25 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_92
+2025-04-12 23:02:25 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.5, magnitude=0.5]
+2025-04-12 23:02:27 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_64, value: {"authId":"user_64","sentiment":{"score":-0.7,"magnitude":0.7}}, offset: 111
+2025-04-12 23:02:27 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_64
+2025-04-12 23:02:27 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.7, magnitude=0.7]
+2025-04-12 23:02:28 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_3, value: {"authId":"user_3","sentiment":{"score":0.3,"magnitude":0.3}}, offset: 112
+2025-04-12 23:02:28 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_3
+2025-04-12 23:02:28 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=0.3, magnitude=0.3]
+2025-04-12 23:02:29 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_64, value: {"authId":"user_64","sentiment":{"score":-0.7,"magnitude":0.7}}, offset: 113
+2025-04-12 23:02:29 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_64
+2025-04-12 23:02:29 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.7, magnitude=0.7]
+2025-04-12 23:02:30 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_56, value: {"authId":"user_56","sentiment":{"score":-0.3,"magnitude":0.3}}, offset: 114
+2025-04-12 23:02:30 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_56
+2025-04-12 23:02:30 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.3, magnitude=0.3]
+2025-04-12 23:02:32 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_41, value: {"authId":"user_41","sentiment":{"score":-0.7,"magnitude":0.7}}, offset: 115
+2025-04-12 23:02:32 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_41
+2025-04-12 23:02:32 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.7, magnitude=0.7]
+2025-04-12 23:02:33 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_11, value: {"authId":"user_11","sentiment":{"score":-0.7,"magnitude":0.7}}, offset: 116
+2025-04-12 23:02:33 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_11
+2025-04-12 23:02:33 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.7, magnitude=0.7]
+2025-04-12 23:02:34 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_44, value: {"authId":"user_44","sentiment":{"score":-0.4,"magnitude":0.4}}, offset: 117
+2025-04-12 23:02:34 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_44
+2025-04-12 23:02:34 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.4, magnitude=0.4]
+2025-04-12 23:02:35 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_66, value: {"authId":"user_66","sentiment":{"score":0.1,"magnitude":0.1}}, offset: 118
+2025-04-12 23:02:35 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_66
+2025-04-12 23:02:35 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=0.1, magnitude=0.1]
+2025-04-12 23:02:36 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Processing message - key: user_90, value: {"authId":"user_90","sentiment":{"score":-0.1,"magnitude":0.1}}, offset: 119
+2025-04-12 23:02:36 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - ProcessedMessage key user_90
+2025-04-12 23:02:36 [Worker-1] INFO  o.s.l.consumer.ProcessedDataConsumer - Sentiment of the current document : SentimentDTO[score=-0.1, magnitude=0.1]
+2025-04-12 23:02:47 [Thread-6] INFO  o.s.load.consumer.ConsumerManager - Shutting down consumers...
+2025-04-12 23:02:47 [Worker-3] ERROR o.s.load.consumer.ConsumerTemplate - Error in consumer loop
+org.apache.kafka.common.errors.WakeupException: null
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.maybeTriggerWakeup(ConsumerNetworkClient.java:530)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:294)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:252)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.pollForFetches(LegacyKafkaConsumer.java:687)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:618)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:591)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:874)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-1] ERROR o.s.load.consumer.ConsumerTemplate - Error in consumer loop
+org.apache.kafka.common.errors.WakeupException: null
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.maybeTriggerWakeup(ConsumerNetworkClient.java:530)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:294)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:252)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.pollForFetches(LegacyKafkaConsumer.java:687)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:618)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:591)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:874)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-5] ERROR o.s.load.consumer.ConsumerTemplate - Error in consumer loop
+org.apache.kafka.common.errors.WakeupException: null
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.maybeTriggerWakeup(ConsumerNetworkClient.java:530)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:294)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:252)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.pollForFetches(LegacyKafkaConsumer.java:687)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:618)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:591)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:874)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-2] ERROR o.s.load.consumer.ConsumerTemplate - Error in consumer loop
+org.apache.kafka.common.errors.WakeupException: null
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.maybeTriggerWakeup(ConsumerNetworkClient.java:530)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:294)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:252)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.pollForFetches(LegacyKafkaConsumer.java:687)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:618)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:591)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:874)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-4] ERROR o.s.load.consumer.ConsumerTemplate - Error in consumer loop
+org.apache.kafka.common.errors.WakeupException: null
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.maybeTriggerWakeup(ConsumerNetworkClient.java:530)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:294)
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:252)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.pollForFetches(LegacyKafkaConsumer.java:687)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:618)
+	at org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer.poll(LegacyKafkaConsumer.java:591)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:874)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:67)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-5] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-1] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-3] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-2] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-4] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Member consumer-processed-data-group-5-6174cc87-f091-484d-ac47-f3a1b3094240 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:02:47 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Member consumer-processed-data-group-4-dfe3a83c-9370-4b83-bbfe-01385670f13a sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:02:47 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Member consumer-processed-data-group-2-0252a9e0-960c-467a-afc3-bdd8b3fd6266 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:02:47 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Member consumer-processed-data-group-3-dc175d43-e18f-46af-b6c5-1715f3e56d27 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:02:47 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-5] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-5, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-4] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-4, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-3] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-3, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-2] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-2, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Revoke previously assigned partitions processed-data-topic-0
+2025-04-12 23:02:47 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Member consumer-processed-data-group-1-a1e047a4-3165-4614-852c-679608958701 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:02:47 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-1, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-5] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:02:47 [Worker-4] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:02:47 [Worker-3] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:02:47 [Worker-3] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:02:47 [Worker-4] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:02:47 [Worker-5] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:02:47 [Worker-2] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:02:47 [Worker-3] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:02:47 [Worker-4] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:02:47 [Worker-2] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:02:47 [Worker-4] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:02:47 [Worker-5] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:02:47 [Worker-3] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:02:47 [Worker-2] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:02:47 [Worker-5] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:02:47 [Worker-2] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:02:47 [Worker-2] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-2 unregistered
+2025-04-12 23:02:47 [Worker-2] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:02:47 [Worker-3] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-3 unregistered
+2025-04-12 23:02:47 [Worker-3] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:02:47 [Worker-5] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-5 unregistered
+2025-04-12 23:02:47 [Worker-5] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:02:47 [Worker-4] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-4 unregistered
+2025-04-12 23:02:47 [Worker-4] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:02:47 [Worker-6] ERROR o.s.load.consumer.ConsumerTemplate - Error removing shutdown hook
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.base/java.lang.Runtime.removeShutdownHook(Runtime.java:245)
+	at org.shyam.load.consumer.ConsumerTemplate.cleanup(ConsumerTemplate.java:141)
+	at org.shyam.load.consumer.ConsumerTemplate.startConsuming(ConsumerTemplate.java:90)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-04-12 23:02:47 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Member consumer-processed-data-group-6-a838c2a1-30a0-40e8-9348-4c4eed3a1761 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed
+2025-04-12 23:02:47 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-6] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-processed-data-group-6, groupId=processed-data-group] Request joining group due to: consumer pro-actively leaving the group
+2025-04-12 23:02:47 [Worker-6] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:02:47 [Worker-6] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:02:47 [Worker-6] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:02:47 [Worker-6] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:02:47 [Worker-6] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-6 unregistered
+2025-04-12 23:02:47 [Worker-6] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:02:47 [Worker-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-04-12 23:02:47 [Worker-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-04-12 23:02:47 [Worker-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-04-12 23:02:47 [Worker-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-04-12 23:02:47 [Worker-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-processed-data-group-1 unregistered
+2025-04-12 23:02:47 [Worker-1] INFO  o.s.load.consumer.ConsumerTemplate - Kafka consumer closed.
+2025-04-12 23:02:47 [Thread-6] INFO  o.s.load.consumer.ConsumerManager - All consumers have been shut down.

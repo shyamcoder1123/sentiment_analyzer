@@ -1,0 +1,11 @@
+org/shyam/reviewsentiment/producer/Producer.class
+org/shyam/reviewsentiment/producer_config/KafkaProducerConfig.class
+org/shyam/reviewsentiment/producer/Producer$1.class
+org/shyam/reviewsentiment/Main.class
+org/shyam/reviewsentiment/ConfigLoader.class
+org/shyam/reviewsentiment/producer/OldestUnprocessedReviewProvider.class
+org/shyam/reviewsentiment/producer/UnprocessedReviewProvider.class
+org/shyam/reviewsentiment/producer/UnprocessedReviewProviderFactory$1.class
+org/shyam/reviewsentiment/producer/UnprocessedReviewProviderFactory.class
+org/shyam/reviewsentiment/producer/ReviewProducerType.class
+org/shyam/reviewsentiment/producer/LatestUnprocessedReviewProvider.class
