@@ -56,6 +56,8 @@ public class ProcessedDataConsumer {
         reviewRepository.findByAuthIdAndSentimentIsNull(authId)
                 .ifPresent(review -> {
                     review.setSentiment(sentiment);
+                    // Set the status to 'processed'
+                    review.setStatus("processed");
                     reviewRepository.save(review);
                     logger.info("Updated sentiment for authId: {}", authId);
                 });

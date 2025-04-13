@@ -12,6 +12,7 @@ public class Review {
     private String review;
     private String authId;
     private String datetime;
+    private String status;
 
     private SentimentDTO sentiment;
 
@@ -56,5 +57,13 @@ public class Review {
 
     public void setSentiment(SentimentDTO sentiment) {
         this.sentiment = sentiment;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
