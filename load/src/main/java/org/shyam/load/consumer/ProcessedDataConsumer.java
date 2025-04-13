@@ -3,20 +3,26 @@ package org.shyam.load.consumer;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.kafka.clients.consumer.ConsumerRecord;;
-import org.shyam.load.db.MongoService;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.shyam.load.db.ReviewRepository;
+import org.shyam.load.model.SentimentDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
 
-public class ProcessedDataConsumer extends ConsumerTemplate {
+
+@Service
+public class ProcessedDataConsumer {
 
     private static final Logger logger = LoggerFactory.getLogger(ProcessedDataConsumer.class);
+    @Autowired
+    private ReviewRepository reviewRepository;
 
-    public ProcessedDataConsumer() {
-        super("processed-data-topic", "processed-data-group", 1000L);
-    }
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
-    @Override
+    @KafkaListener(topics = "processed-data-topic", groupId = "processed-data-group")
     protected void consume(ConsumerRecord<String, String> record) {
         // processing logic
         try  {
@@ -27,11 +33,6 @@ public class ProcessedDataConsumer extends ConsumerTemplate {
         }
     }
 
-    @Override
-    protected void reject(ConsumerRecord<String, String> record, Exception e) {
-        logger.error("Rejecting` record: key = {}, value = {}", record.key(), record.value());
-    }
-
     private void processAndUpdateDB(String jsonMessage, String authId){
         logger.info("ProcessedMessage key {}", authId);
         SentimentDTO sentiment = getSentiment(jsonMessage);
@@ -40,7 +41,6 @@ public class ProcessedDataConsumer extends ConsumerTemplate {
 
     private SentimentDTO getSentiment(String jsonMessage)  {
         SentimentDTO sentiment;
-        ObjectMapper objectMapper = new ObjectMapper();
         try{
             JsonNode root = objectMapper.readTree(jsonMessage);
             JsonNode sentimentNode = root.get("sentiment");
@@ -53,8 +53,12 @@ public class ProcessedDataConsumer extends ConsumerTemplate {
     }
 
     private void updateDB(String authId, SentimentDTO sentiment){
-        MongoService service = new MongoService();
-        service.updateSentiment(authId, sentiment);
+        reviewRepository.findByAuthIdAndSentimentIsNull(authId)
+                .ifPresent(review -> {
+                    review.setSentiment(sentiment);
+                    reviewRepository.save(review);
+                    logger.info("Updated sentiment for authId: {}", authId);
+                });
     }
 
 }

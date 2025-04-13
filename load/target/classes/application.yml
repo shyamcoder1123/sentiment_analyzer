@@ -1,8 +1,0 @@
-order-consumer:
-  topics: orders
-  bootstrap-servers: localhost:9092
-  group-id: demo-group
-  key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-  value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-  auto-offset-reset: earliest
-  max.poll.records: 1
